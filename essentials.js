@@ -1,11 +1,10 @@
 class Colors24ESS {
-    constructor() { }
     getInfo() {
         return {
                 "id": "Colors24ESS",
                 "name": "24ColorsESS",
-                "color1": "#00eeff",
-                "color2": "#00c1cf",
+                color1: "#00eeff",
+                color2: "#00c1cf",
                 "blocks": [
                     {
                         "opcode": "splitstringy",
