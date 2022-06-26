@@ -3,7 +3,7 @@ class Colors24ESS {
         return {
                 "id": "Colors24ESS",
                 "name": "24ColorsESS",
-                color1: "#00eeff",
+                color1: "#00a2ad",
                 color2: "#00c1cf",
                 "blocks": [
                     {
