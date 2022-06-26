@@ -35,7 +35,7 @@ class Colors24ESS {
         var stringLocator = 0;
         const stringOutput = [];
         for (let i = 0; i < string.length; i++) {
-            if (string.substring(i, i + 1) == split or i == string.length) {
+            if (string.substring(i, i + 1) == split or i+1 == string.length) {
                 stringOutput.push(stringHolder);
                 stringHolder = "";
                 stringLocator++;
