@@ -8,7 +8,7 @@ class Colors24ESS {
                     {
                         "opcode": "substringy",
                         "blockType": "reporter",
-                        "text": "letters  through  of ",
+                        "text": "letters [num1] through [num2] of [string]",
                         "arguments": {
                             "num1": {
                                 "type": "number",
@@ -23,7 +23,6 @@ class Colors24ESS {
                                 "defaultValue": "hello world"
                             }
                         }
-                        "disableMonitor": true
                     }
                 ],
                 "menus": {} //we will get back to this in a later tutorial
