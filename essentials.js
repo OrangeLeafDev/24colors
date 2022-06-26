@@ -1,9 +1,9 @@
-class NitroBlock {
+class Colors24ESS {
     constructor() {}
     getInfo() {
         return {
-            “id”: “NitroBlock”,
-            “name”: “NitroBlock”,
+            “id”: “Colors24ESS”,
+            “name”: “24Colors ESS”,
             “blocks”: [{
                     “opcode”: “substringy”,
                     “blockType”: “reporter”,
@@ -31,4 +31,4 @@ class NitroBlock {
         return string.substring(num1 - 1, num2);
     };
 }
-Scratch.extensions.register(new NitroBlock());
+Scratch.extensions.register(new Colors24ESS());
