@@ -30,12 +30,12 @@ class Colors24ESS {
     };
 
     splitstringy({ string, split, num1 }) {
-        var stringHolder = "";
-        var stringLocator = 0;
-        const stringOutput = [];
-        for (let i = 0; i < stringHolder.length; i++) {
+        stringHolder = "";
+        stringLocator = 0;
+        stringOutput = [];
+        for (let i = 0; i < string.length; i++) {
             if (string.substring(i, i + 1) == split) {
-                stringOutput[stringLocator] = stringHolder
+                stringOutput.push(stringHolder);
                 stringHolder = "";
                 stringLocator++;
             } else {
