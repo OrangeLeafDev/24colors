@@ -7,9 +7,9 @@ class Colors24ESS {
                 "blocks": [
                     {
                         "opcode": "substringy",
-                        "blockType": Scratch.BlockType.BOOLEAN,
+                        "blockType": "reporter",
                         "text": "letters  through  of ",
-                        arguments: {
+                        "arguments": {
                             "num1": {
                                 "type": "number",
                                 "defaultValue": "2"
