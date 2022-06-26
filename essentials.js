@@ -30,9 +30,9 @@ class Colors24ESS {
     };
 
     splitstringy({ string, split, num1 }) {
-        stringHolder = "";
-        stringLocator = 0;
-        stringOutput = [];
+        var stringHolder = "";
+        var stringLocator = 0;
+        const stringOutput = [];
         for (let i = 0; i < string.length; i++) {
             if (string.substring(i, i + 1) == split) {
                 stringOutput.push(stringHolder);
