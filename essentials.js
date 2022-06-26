@@ -43,7 +43,7 @@ class Colors24ESS {
                 stringHolder += string.substring(i, i + 1);
             }
         }
-        return stringOutput[num1]
+        return stringOutput[num1-1]
     };
 }
 Scratch.extensions.register(new Colors24ESS());
