@@ -13,11 +13,11 @@ class Colors24ESS {
                             "string": {
                                 "type": "string",
                                 "defaultValue": "a|b|c|d|e|f|g"
-                            }
+                            },
                             "split": {
                                 "type": "string",
                                 "defaultValue": "|"
-                            }
+                            },
                             "num1": {
                                 "type": "number",
                                 "defaultValue": "2"
