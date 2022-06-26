@@ -3,24 +3,24 @@ class Colors24ESS {
     getInfo() {
         return {
                 "id": "Colors24ESS",
-                "name": "24Colors ESS",
+                "name": "24ColorsESS",
                 "blocks": [
                     {
-                        "opcode": "substringy",
+                        "opcode": "splitstringy",
                         "blockType": "reporter",
-                        "text": "letters [num1] through [num2] of [string]",
+                        "text": "split string [string] using [split] grab item [num1]",
                         "arguments": {
+                            "string": {
+                                "type": "string",
+                                "defaultValue": "a|b|c|d|e|f|g"
+                            }
+                            "split": {
+                                "type": "string",
+                                "defaultValue": "|"
+                            }
                             "num1": {
                                 "type": "number",
                                 "defaultValue": "2"
-                            },
-                            "num2": {
-                                "type": "number",
-                                "defaultValue": "5"
-                            },
-                            "string": {
-                                "type": "string",
-                                "defaultValue": "hello world"
                             }
                         }
                     }
@@ -29,8 +29,20 @@ class Colors24ESS {
         }
     };
 
-    substringy({ num1, num2, string }) {
-        return string.substring(num1 - 1, num2);
+    splitstringy({ string, split, num1 }) {
+        var stringHolder = "";
+        var stringLocator = 0;
+        const stringOutput = [];
+        for (let i = 0; i < stringHolder.length; i++) {
+            if (string.substring(i, i + 1) == split) {
+                stringOutput[stringLocator] = stringHolder
+                stringHolder = "";
+                stringLocator++;
+            } else {
+                stringHolder += string.substring(i, i + 1);
+            }
+        }
+        return stringOutput[num1]
     };
 }
 Scratch.extensions.register(new Colors24ESS());
