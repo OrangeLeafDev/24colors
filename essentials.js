@@ -4,6 +4,7 @@ class Colors24ESS {
         return {
                 "id": "Colors24ESS",
                 "name": "24ColorsESS",
+                "color1": "#00eeff",
                 "blocks": [
                     {
                         "opcode": "splitstringy",
